@@ -13,7 +13,7 @@ class UserListView(ListView):
 
     template_name = "list.html"
     model = Profile
-    ordering = ("-name")
+    ordering = ("id")
     paginate_by = 1000
     context_object_name = "users"
 
