@@ -14,10 +14,6 @@ body {
   width: 100%;
 }
 
-.header__img {
-  margin-left: 30px;
-  width: 200px;
-}
 
 .header__menu {
   margin-right: 30px;
@@ -52,11 +48,7 @@ text-decoration: none;
 text-decoration: underline;
 }
 
-.header__menu--profile {
-align-items: center;
-display: flex;
-cursor: pointer;
-}
+
 
 .header__menu--profile img {
 width: 40px;
@@ -71,10 +63,6 @@ border-radius: 100%;
   padding: 0px 100px;
 }
 
-.edit__container p{
-  font-weight: bold;
-  margin-bottom: 50px;
-}
 
 .input {
 border: 2px solid gray;
@@ -87,17 +75,6 @@ outline: none;
 padding: 0px 20px;
 width: 70%;
 }
-
-/* .textarea{
-border: 2px solid gray;
-border-radius: 10px;
-font-family: 'Muli', sans-serif;
-font-size: 14px;
-margin-bottom: 20px;
-outline: none;
-padding: 0px 20px;
-width: 70%;
-} */
 
 .button{
   background-color: red;
@@ -129,58 +106,4 @@ width: 70%;
   margin-left: 57%;
   margin-bottom: 20px;
   border: none;
-}
-
-.contenedor__img{
-  width: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 150px;
-}
-
-.contenedor__img .share-info3{
-  position: relative;
-  height: 150px;
-  width: 150px;
-  overflow: hidden;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border-radius: 100px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.contenedor__img .share-info3 .bee_avatar2{
-  width: 150px;
-  height: 150px;
-  transition: all 200ms ease-out;
-}
-
-.contenedor__img .share-info3 .texto{
-  position: absolute;
-  top: 0px;
-  height: 150px;
-  width: 150px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border-radius: 100px;
-  cursor: pointer;
-  background: rgba(34,34,34,0.75);
-  opacity: 0; 
-  visibility: hidden;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.404);
-  transition: all 225ms ease-out;
-}
-
-.contenedor__img .share-info3:hover > .texto{
-  opacity: 1;
-  visibility: visible;
-  transition: all 225ms ease-out;
-}
-
-.contenedor__img .share-info3:hover > .texto p{
-  margin-top: 65px;
-  transition: all 225ms ease-out;
 }

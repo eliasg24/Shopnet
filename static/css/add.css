@@ -14,11 +14,6 @@ body {
     width: 100%;
   }
   
-  .header__img {
-    margin-left: 30px;
-    width: 200px;
-  }
-  
   .header__menu {
       margin-right: 30px;
   }
@@ -67,11 +62,11 @@ body {
     border-radius: 100%;
   }
 
-  .live{
+  .add{
       padding: 0px 100px;
   }
 
-  .live__container p{
+  .add__container p{
       font-weight: bold;
       margin-bottom: 50px;
   }
@@ -100,61 +95,6 @@ body {
     width: 30%;
   }
 
-  .textarea{
-    border: 2px solid gray;
-    border-radius: 10px;
-    font-family: 'Muli', sans-serif;
-    font-size: 14px;
-    margin-bottom: 20px;
-    outline: none;
-    padding: 0px 20px;
-    width: 70%;
-  }
-
-  .btn_url{
-    background-color: #F39C12 ;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: 'Muli', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    height: 30px;
-    letter-spacing: 0.5px;
-    outline: none;
-    margin-bottom: 20px;
-    border: none;
-  }
-
-  .title p{
-      margin-top: -15px;
-      font-size: 12px;
-  }
-
-  .categorias__Container{
-    border: 2px solid gray;
-    font-family: 'Muli', sans-serif;
-    font-size: 14px;
-    height: 30px;
-    margin-bottom: 20px;
-    outline: none;
-    padding: 0px 20px;
-    width: 74%;
-  }
-
-  .button{
-    background-color: #D7DBDD;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: 'Muli', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    height: 50px;
-    letter-spacing: 1px;
-    margin-top: 80px;
-    outline: none;
-    border: none;
-  }
-
   .button2{
     background-color: #F39C12 ;
     border-radius: 5px;
@@ -170,5 +110,3 @@ body {
     margin-bottom: 20px;
     border: none;
   }
-
-

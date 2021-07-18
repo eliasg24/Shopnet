@@ -4,7 +4,6 @@
 
     {% load static %}
     <link rel="stylesheet" href="{% static "css/list.css" %}">
-    <link rel="stylesheet" href="{% static "css/listmobile.css" %}">
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
 
     <title>Shopnet</title>
@@ -13,25 +12,19 @@
 
 {% block container %}
 
-    <section class="main">
-        <h2 class="main__title">Users List</h2>
-    </section>
-
-    <section class="carousel">
+    <h2 class="user">Users List</h2>    
  
-        <table style="width: 30%">
-                {% for user in users %}
+    <table style="width: 30%">
+            {% for user in users %}
 
-                <tr>
-                    <td>{{user.id}}</td>
-                    <td>{{user.name}}</td>
-                    <td>{{user.job_title}}</td>
-                </tr>
-                
-                {% endfor %}
-        </table>
-    
-    </section>
+            <tr>
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.job_title}}</td>
+            </tr>
+            
+            {% endfor %}
+    </table>
 
 
 {% endblock %}
