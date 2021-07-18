@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block head_content %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/detail.css' %}">
+    <link rel="stylesheet" href="{% static "css/detailmobile.css" %}">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <title>Bee</title>
+{% endblock  %}
+
+{% block container %}
+
+    <section class="edit">
+        <section class="edit__container">
+            
+            <form class="live__container--form" action="{% url "users:detail" user.pk %}" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+
+                {{form.errors}}
+
+                <div class="user_name">
+                    <h4>Name</h4>
+                    <input class="input" type="text" name="name" value="{{user.name}}">
+                </div>
+
+                <div class="user_name">
+                    <h4>Email</h4>
+                    <input class="input" type="email" name="email" value="{{user.email}}">
+                </div>
+
+                <div class="user_name">
+                    <h4>Age</h4>
+                    <input class="input" type="number" name="age" value="{{user.age}}">
+                </div>                
+
+                <div class="user_name">
+                    <h4>Job Title</h4>
+                    <input class="input" type="text" name="job_title" value="{{user.job_title}}">
+                </div>
+
+                <div class="user_name">
+                    <h4>Company Name</h4>
+                    <input class="input" type="text" name="company_name" value="{{user.company_name}}">
+                </div>
+
+                <div class="button__container">
+
+                    <label>
+                        <button class="button2" type="submit" name="enviar" value="Enviar" id="btn">Save User</button>
+                    </label>     
+                </div>
+            </form>
+            <form action="{% url "users:delete" %}" method="POST">
+                {% csrf_token %}
+                <input type="hidden" name="profile_pk" value="{{user.pk}}">
+                <button class="button" type="submit">Delete User</button>
+            </form>
+        </section>
+    </section>
+
+{% endblock  %}

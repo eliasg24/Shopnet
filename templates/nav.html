@@ -1,0 +1,13 @@
+<header class="header">
+    {% load static %}
+    <h1>SHOPNET</h1>
+    <div class="header__menu">
+        <div class="header__menu--profile">
+            <img src="{% static 'images/usuario.png' %}" alt="">
+        </div>
+            <ul>
+                <li><a href="{% url 'users:list' %}">Users List</a></li>
+                <li><a href="{% url 'users:add' %}">Add User</a></li>
+            </ul>
+    </div>
+</header>

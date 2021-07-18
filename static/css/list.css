@@ -1,0 +1,228 @@
+/*----------------------------------------------------HEADER Y BODY      #8f57fd     */
+/*----------------------------------------------------pagina de colores gradient= https://digitalsynopsis.com/design/beautiful-color-ui-gradients-backgrounds/ */
+body {
+    margin: 0;
+    font-family: 'Muli', sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+  }
+  
+  .header {
+    align-items: center;
+    background: #141e30;
+    color: white;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    top: 0px;
+    width: 100%;
+  }
+  
+  .header__img {
+    margin-left: 30px;
+    width: 200px;
+  }
+  
+  .header__menu {
+      margin-right: 30px;
+  }
+  
+  .header__menu ul {
+    display: none;
+    list-style: none;
+    margin: 0px 0px 0px -50px;
+    padding: 0px 20px 5px 10px;
+    position: absolute;
+    width: 100px;
+    text-align: right;
+    background-color: #141e30;
+    border-radius: 10px;
+  }
+  
+  .header__menu:hover ul, ul:hover {
+      display: block;
+  }
+  
+  .header__menu li {
+    margin: 10px 0px;
+  }
+  
+  .header__menu li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .header__menu li a:hover {
+    text-decoration: underline;
+  }
+
+  .header__menu--profile {
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+  }
+  
+  .header__menu--profile img {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 100%;
+  }
+
+ /*----------------------------------------------------BUSCADOR*/ 
+
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+    border-radius: 0px 0px 40px 40px;
+  }
+  
+  .main__title {
+    color: white;
+    font-size: 25px;
+  }
+  
+  .main-link--input {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .input {
+    background-color: rgba(255,255,255,0.1);
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    height: 50px;
+    /* margin-bottom: 20px; */
+    outline: none;
+    padding: 0px 20px;
+    width: 40%;
+    cursor: pointer;
+  }
+
+  .input:hover {
+    background-color: rgba(255, 255, 255, 0.144);
+  }
+
+  
+  ::placeholder {
+    color: white;
+  }
+/*----------------------------------------------------INICIO*/
+
+  .categories__title {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    padding-left: 30px;
+    width: 100%;
+  }
+  
+  .carousel {
+    overflow: scroll;
+    padding-left: 30px;
+    width: 100%;
+    position: relative;
+  }
+
+  .carousel::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .carousel::-webkit-scrollbar-thumb {
+    display: none;
+    background-color: rgba(255,255,255,0.1);
+    border: 0.5px solid white;
+    border-radius: 25px;
+  }
+  
+  .carousel::-webkit-scrollbar-thumb:hover{
+    display: block;
+  }
+  
+  .carousel__container {
+    transition: 450ms -webkit-transform;
+    transition: 450ms transform;
+    transition: 450ms transform, 450ms -webkit-transform;
+    font-size: 0;
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px;
+  }
+  
+  .carousel__container:hover .carousel-item {
+    opacity: 0.3;
+  }
+  
+  .carousel__container:hover .carousel-item:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 1;
+  }
+  
+  .carousel-item {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 250px;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 450ms all;
+    -webkit-transform-origin: center left;
+            transform-origin: center left;
+  }
+
+  table, th, td {
+    border: 2px solid white;
+    border-collapse: collapse;
+    color: white;
+  }  
+
+  th, td {
+    padding: 15px;
+  }
+
+  table {
+    width: 100px;
+    margin: 0 auto;
+  }
+  th {
+    text-align: left;
+}
+
+/*----------------------------------------------------FOOTER*/
+
+  .footer {
+    align-items: center;
+    background-color: #243b55;
+    display: flex;
+    height: 100px;
+    width: 100%;
+  }
+  
+  .footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+
+  
+  

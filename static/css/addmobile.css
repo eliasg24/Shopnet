@@ -1,0 +1,21 @@
+@media only screen and (max-width: 600px){
+    .header__img{
+        margin-left: 10px;
+    }
+
+    iframe {
+        width: 200px;
+        height: 160px;
+        margin-bottom: 20px;
+     }     
+    
+    .button2{
+        margin: 0px;
+        margin-top: 10px;
+    }
+
+    .bee_avatar{
+        margin-top: -120px;
+    }
+
+}

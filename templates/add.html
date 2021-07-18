@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block head_content %}
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static "css/add.css" %}">
+    <link rel="stylesheet" href="{% static "css/addmobile.css" %}">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+
+    <title>Shopnet</title>
+<!--https://cssgradient.io/gradient-backgrounds/    Es la url para colores y diseños de gradiente-->
+{% endblock  %}
+
+{% block container %}
+
+    <section class="live">
+        <section class="live__container">
+            <h2>Add User</h2>
+
+            <form class="live__container--form" id="form" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                
+                {{form.errors}}
+                
+                <div class="title">
+                    <input class="input" type="text" name="name" value="" placeholder="Name"/>
+                </div>
+
+                <div class="title">
+                    <input class="input2" type="email" name="email" value="" placeholder="Email"/>
+                    <input class="input2" type="number" name="age" value="" placeholder="Age"/>
+                </div>
+                
+                <div class="title">
+                    <input class="input2" type="text" name="job_title" value="" placeholder="Job Title"/>
+                    <input class="input2" type="text" name="company_name" value="" placeholder="Company"/>
+                </div>
+                
+                <div class="button__container">
+            
+                    <label>
+                        <button class="button2" type="submit" id="btn">Continue</button>  
+                    </label>     
+                </div>
+            
+            </form>
+
+        </section>
+    </section>
+
+{% endblock %}
